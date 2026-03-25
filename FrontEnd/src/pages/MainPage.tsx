@@ -33,11 +33,34 @@ export default function MainPage() {
       </div>
 
       {/* INFO */}
-      <div className="relative mr-[60px] ml-auto h-[411px] w-[544px]">
+      <div className="relative mr-[60px] ml-auto h-[370px] w-[544px]">
         <div className="absolute right-[-8px] bottom-[-8px] h-full w-full bg-black" />
         <div className="absolute top-0 left-0 h-full w-full border-[3px] border-black bg-[#fafafa]">
           <div className="flex h-[47px] w-full items-center bg-black px-[24px] font-mono text-[20px] text-[#fafafa]">
             INFO.TXT
+          </div>
+        </div>
+
+        <div className="absolute top-0 left-0 h-full w-full border-[3px] border-black bg-[#fafafa]">
+          <div className="flex h-[47px] w-full items-center bg-black px-[24px] font-mono text-[20px] text-[#fafafa]">
+            INFO.TXT
+          </div>
+
+          <div className="divide-y divide-black">
+            {[
+              { label: 'NAME', value: '김나윤' },
+              { label: 'ROLE', value: 'FE Developer' },
+              { label: 'EMAIL', value: 'nayun2179@gmail.com' },
+              { label: 'GITHUB', value: 'github.com/kxxnayun' },
+              { label: 'LINKEDIN', value: 'linkedin.com/in/kxxnayun' },
+            ].map((item) => (
+              <div
+                key={item.label}
+                className="flex items-center justify-between px-[24px] py-[16px] font-mono text-[20px]">
+                <span>{item.label}</span>
+                <span>{item.value}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
