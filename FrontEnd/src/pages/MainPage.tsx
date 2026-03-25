@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function MainPage() {
   return (
     <div
@@ -26,16 +28,20 @@ export default function MainPage() {
           <div className="mt-[72px] ml-[95px] flex gap-[24px]">
             <div className="relative h-[61px] w-[151px]">
               <div className="absolute right-[-8px] bottom-[-8px] h-full w-full bg-black" />
-              <button className="font-grotesk absolute top-0 left-0 h-full w-full cursor-pointer border-[3px] border-black bg-[#F5D500] text-[20px] font-bold">
+              <Link
+                to="/project"
+                className="font-grotesk absolute top-0 left-0 flex h-full w-full items-center justify-center border-[3px] border-black bg-[#fafafa] text-[20px] font-bold transition-colors duration-200 hover:bg-[#F5D500]">
                 PROJECT →
-              </button>
+              </Link>
             </div>
 
             <div className="relative h-[61px] w-[151px]">
               <div className="absolute right-[-8px] bottom-[-8px] h-full w-full bg-black" />
-              <button className="font-grotesk absolute top-0 left-0 h-full w-full cursor-pointer border-[3px] border-black bg-[#fafafa] text-[20px] font-bold">
+              <Link
+                to="/about"
+                className="font-grotesk absolute top-0 left-0 flex h-full w-full items-center justify-center border-[3px] border-black bg-[#fafafa] text-[20px] font-bold transition-colors duration-200 hover:bg-[#F5D500]">
                 ABOUT ME
-              </button>
+              </Link>
             </div>
           </div>
         </div>
