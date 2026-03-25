@@ -1,10 +1,10 @@
 import Navbar from '../components/Navbar';
 import { Outlet } from 'react-router-dom';
 
-export default function App() {
+export default function Layout() {
   return (
-    <div className="min-h-screen w-full">
-      <div className="mx-auto h-[1024px] w-[1440px]">
+    <div className="w-full bg-neutral-200">
+      <div className="mx-auto flex h-[1024px] max-w-[1440px] flex-col">
         <Navbar />
         <Outlet />
       </div>
