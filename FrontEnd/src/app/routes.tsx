@@ -1,13 +1,20 @@
 import { createBrowserRouter } from 'react-router-dom';
 import App from './App';
+import Navbar from '../components/Navbar';
+import MainPage from '../pages/MainPage';
 
 export const router = createBrowserRouter([
   {
-    element: <App />,
+    element: (
+      <>
+        <Navbar />
+        <App />
+      </>
+    ),
     children: [
       {
         path: '/',
-        element: <div className="p-4">FitLink Home</div>,
+        element: <MainPage />,
       },
     ],
   },
