@@ -12,13 +12,15 @@ export default function AboutPage() {
       }}>
       <div className="mt-[93px] ml-[60px] flex items-start">
         <div>
-          <div className="font-grotesk ml-[80px] text-[64px] font-bold">
+          <div className="font-grotesk text-[64px] leading-20 font-bold">
             저는
-            <div className="w-[350px] bg-[#F5D500]">도전을 즐기는</div>
+            <div className="w-[480px] bg-[#F5D500]">도전을 멈추지 않는</div>
             개발자입니다.
           </div>
-          <p className="mt-[32px] ml-[80px] text-[24px]">
-            맡은 일에 최선을 다하고 애정을 가지며 <br />팀 전체가 성장하는 것을 지향합니다.
+          <p className="mt-[32px] text-[24px]">
+            함께 일하는 사람들과 좋은 흐름을 만들어 가는 것을 좋아합니다.
+            <br />
+            맡은 일에 최선을 다하고 애정을 가지며 팀 전체가 성장하는 것을 지향합니다.
           </p>
 
           <div className="mt-[93px] flex flex-row gap-x-[100px] font-mono">
