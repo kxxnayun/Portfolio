@@ -3,6 +3,7 @@ import MainPage from '../pages/MainPage';
 import Layout from '../layout/Layout';
 import ProjectPage from '../pages/ProjectPage';
 import AboutPage from '../pages/AboutPage';
+import ProjectDetailPage from '@/pages/ProjectDetailPage';
 
 export const router = createBrowserRouter([
   {
@@ -11,6 +12,7 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <MainPage /> },
       { path: 'project', element: <ProjectPage /> },
+      { path: 'project/:id', element: <ProjectDetailPage /> },
       { path: 'about', element: <AboutPage /> },
     ],
   },

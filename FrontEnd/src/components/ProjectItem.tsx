@@ -1,17 +1,14 @@
-interface ProjectItemProps {
-  image: string;
-  number: string;
-  title: string;
-  description: string;
-  techStack: string[];
-}
+import type { Project } from '@/types/Project';
+import { Link } from 'react-router-dom';
 
-export default function ProjectItem({ image, number, title, description, techStack }: ProjectItemProps) {
+export default function ProjectItem({ id, image, number, title, description, techStack }: Project) {
   return (
     <div className="mt-[40px] w-[660px]">
       <div className="relative h-[600px] w-[660px]">
         <div className="absolute right-[-8px] bottom-[-8px] h-full w-full bg-black" />
-        <div className="absolute top-0 left-0 h-full w-full border-[3px] border-black bg-[#fafafa]">
+        <Link
+          to={`/project/${id}`}
+          className="absolute top-0 left-0 h-full w-full border-[3px] border-black bg-[#fafafa]">
           {/* 프로젝트 이미지 */}
           <img src={image} alt={title} className="h-[371px] w-full object-cover" />
 
@@ -28,7 +25,7 @@ export default function ProjectItem({ image, number, title, description, techSta
               ))}
             </div>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );

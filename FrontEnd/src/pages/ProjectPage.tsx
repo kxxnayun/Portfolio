@@ -1,22 +1,5 @@
+import { projects } from '@/types/Project';
 import ProjectItem from '../components/ProjectItem';
-import deare from '../assets/deare.png';
-
-const projects = [
-  {
-    image: deare,
-    number: '01',
-    title: 'Dear.E',
-    description: '아날로그의 온기를 스마트하게, 편지 아카이빙 서비스',
-    techStack: ['React', 'TypeScript'],
-  },
-  {
-    image: deare,
-    number: '01',
-    title: 'Dear.E',
-    description: '아날로그의 온기를 스마트하게, 편지 아카이빙 서비스',
-    techStack: ['React', 'TypeScript'],
-  },
-];
 
 export default function ProjectPage() {
   return (
@@ -32,8 +15,8 @@ export default function ProjectPage() {
         <div className="font-grotesk text-[48px] font-bold">PROJECTS</div>
       </div>
       <div className="flex flex-wrap justify-center gap-x-[40px]">
-        {projects.map((project, index) => (
-          <ProjectItem key={index} {...project} />
+        {projects.map((project) => (
+          <ProjectItem key={project.id} {...project} />
         ))}
       </div>
     </div>
