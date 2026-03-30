@@ -1,4 +1,4 @@
-import type { Project } from '@/types/Project';
+import type { Project } from '../types/Project';
 import { Link } from 'react-router-dom';
 
 export default function ProjectItem({ id, image, number, title, description, techStack }: Project) {

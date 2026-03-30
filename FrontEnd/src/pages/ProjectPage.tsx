@@ -1,4 +1,4 @@
-import { projects } from '@/types/Project';
+import { projects } from '../types/Project';
 import ProjectItem from '../components/ProjectItem';
 
 export default function ProjectPage() {

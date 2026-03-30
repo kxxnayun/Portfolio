@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 export default function App() {
   return (
     <div className="min-h-screen w-full">
-      <div className="mx-auto h-[1024px] w-[1440px]">
+      <div className="mx-auto flex min-h-screen w-[1440px] flex-col">
         <Navbar />
         <Outlet />
       </div>
